@@ -1,0 +1,10 @@
+header .burger-button {
+  transition: 1s;
+  width: 30px;
+}
+
+header .menu-burger-actif {
+  transform: rotateZ(90deg);
+  width: 30px;
+}
+/*# sourceMappingURL=style.css.map */
