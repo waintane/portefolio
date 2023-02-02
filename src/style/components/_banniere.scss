@@ -1,0 +1,50 @@
+.banniere{
+    color: white;
+    height: 95vh;
+    width: 100vw;
+
+    background-image: url(./img/banniere.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 45%;
+    .background-filter{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.178);
+        height: 89vh;
+        width: 100%;
+        padding-top: 40px;
+        .content-banniere{
+            margin: 0px 4vw;
+            .contacte-moi{
+
+                h3{
+                    font-size: clamp(16px, 1.2vw, 25px);
+
+                    background-color: $dark;
+                    width: clamp(170px, 15%, 270px);
+                    padding: 15px;
+                    border: 2px solid $gold;
+                    margin-left: auto;
+                    text-align: center;
+                }
+                .line div:nth-of-type(1){
+                    width: clamp(150px, 13%, 230px);
+                    margin-bottom: 20px;
+                    border: 2px solid $gold;
+                    margin-left: auto;
+                }
+                .line div:nth-of-type(2){
+                    width: clamp(100px, 9%, 180px);
+                    border: 2px solid $gold;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    h1,h2{
+        padding: 0px;
+        margin: 0px;
+    }
+}

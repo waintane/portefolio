@@ -6,14 +6,10 @@ const Header = () => {
             <header>
                 <div className="burger"><MenuBurger/></div>
                 <nav>
-                    <a href="">Projet</a>
-                    <a href="">À propos</a>
-                    <a href="">Contact</a>
+                    <a href="">PROJET</a>
+                    <a href="">À PROPOS</a>
+                    <a href="">CONTACT</a>
                 </nav>
-                <ul>
-                    <li>En</li>
-                    <li>Fr</li>
-                </ul>
             </header>
         </div>
     )
