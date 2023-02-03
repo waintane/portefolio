@@ -12,6 +12,8 @@ const Competences = () => {
             </div>
             <div className="tabs">            
                     {data.map(data => <CarteCompetence
+                    key = {data.id}
+                    id = {data.id}
                     icon = {data.icon}
                     titre = {data.titre}
                     liste = {data.liste}

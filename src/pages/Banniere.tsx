@@ -25,12 +25,14 @@ const Banniere = () => {
                         <div className="reseaux">
                             {/* transformer en fonctional component */}
                             {data.map(data => <Reseau
+                            key = {data.id}
                             icon = {data.icon}
                             />)}
                         </div>
                         <div className="descriptif">
                                 <p>
-                                Salut, je suis un développeur frontend et présentement un étudiant à temps plein en techniques d'intégration multimédia au College de Maisonneuve 
+                                Salut, je suis un développeur frontend pationé et présentement un étudiant des 3e année à 
+                                temps plein en techniques d'intégration multimédia au Collège de Maisonneuve 
                                 </p>
                         </div>
                     </div>

@@ -1,14 +1,25 @@
 import MenuBurger from "./micro-components/MenuBurger";
+import activeBurger from "../module/menuFonction";
 
-const Header = () => {
+const Header = () => {  
+
     return(
         <div className="header">
             <header>
                 <div className="burger"><MenuBurger/></div>
                 <nav>
-                    <a href="#competence">COMPÉTENCE</a>
-                    <a href="">PROJET</a>
-                    <a href="">CONTACT</a>
+                    <div className="header-element" onClick={activeBurger}>
+                        <a href="#competence">COMPÉTENCE</a>
+                        <div className="line"></div>
+                    </div>
+                    <div className="header-element" onClick={activeBurger}>
+                        <a href="">PROJET</a>
+                        <div className="line"></div>
+                    </div>
+                    <div className="header-element" onClick={activeBurger}>
+                        <a href="">CONTACT</a>
+                        <div className="line"></div>
+                    </div>
                 </nav>
             </header>
         </div>

@@ -377,6 +377,36 @@ header nav {
   background-color: white;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3vw, 100px);
+  padding-top: 120px;
+  padding-left: 4vw;
+}
+
+header nav .header-element a {
+  color: black;
+  text-decoration: none;
+  font-size: clamp(20px, 2vw, 70px);
+}
+
+header nav .header-element a:after {
+  transition: 0.5s;
+  content: '';
+  display: block;
+  position: relative;
+  width: 2%;
+  border: 2px solid #DAB757;
+  margin-top: 8px;
+}
+
+header nav .header-element a:hover:after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 10%;
+  border: 2px solid #DAB757;
+  margin-top: 8px;
 }
 
 header .nav-actif {
@@ -527,7 +557,7 @@ header .nav-actif {
 .competence .tabs .carte {
   border-radius: 5px;
   background-color: #3f3f3f;
-  height: clamp(100px, 30vw, 600px);
+  height: clamp(100px, 33vw, 600px);
   text-align: center;
   color: white;
 }
@@ -539,7 +569,7 @@ header .nav-actif {
 }
 
 .competence .tabs .carte h3 {
-  font-size: clamp(18px, 1.5vw, 40px);
+  font-size: clamp(20px, 1.6vw, 43px);
 }
 
 .competence .tabs .carte p {
@@ -559,10 +589,119 @@ header .nav-actif {
   margin-top: 200px;
   width: 100vw;
   background-color: #487E6F;
-  height: 100px;
+  height: 150px;
 }
 
 .page-projet .titre h2 {
   margin-left: 4vw;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-size: clamp(20px, 2.5vw, 50px);
+  font-family: Montserrat;
+  color: white;
+}
+
+.page-projet .titre .line {
+  margin-left: 4vw;
+  width: clamp(50px, 10vw, 200px);
+  border: 2px solid #DAB757;
+  margin-bottom: 60px;
+}
+
+.page-projet .filtre {
+  margin-top: 50px;
+  display: flex;
+  gap: clamp(40px, 6vw, 200px);
+  margin-bottom: 100px;
+}
+
+.page-projet .filtre div {
+  background-color: #3f3f3f;
+  text-align: center;
+  width: clamp(200px, 14vw, 500px);
+}
+
+.page-projet .filtre div h3 {
+  color: #DAB757;
+  font-family: Montserrat;
+  font-size: clamp(20px, 1.5vw, 60px);
+}
+
+.page-projet .filtre div:first-of-type {
+  text-align: left;
+}
+
+.page-projet .filtre div:first-of-type h3 {
+  margin-left: 4vw;
+}
+
+.page-projet .carte {
+  width: 90vw;
+  height: 200px;
+  padding: 0px 20px 0px 4vw;
+  background-color: #3f3f3f;
+  margin-bottom: 400px;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.page-projet .carte .container1 {
+  color: white;
+}
+
+.page-projet .carte .container1 img {
+  width: 90%;
+  height: 350px;
+  padding: 10px;
+  background-color: black;
+}
+
+.page-projet .carte .container2 .description {
+  color: white;
+  height: 200px;
+}
+
+.page-projet .carte .container2 .bouton {
+  margin-left: 0.5vw;
+  width: 35%;
+  height: 80px;
+  padding: 0px 10px;
+  background-color: #487E6F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-projet .carte .container2 .bouton div {
+  background-color: white;
+  border: 4px solid #DAB757;
+  padding: 10px 30px;
+  font-weight: 200;
+  font-size: clamp(18px, 1.3vw, 40px);
+}
+
+.page-projet .carte .container2 .bouton div:hover {
+  cursor: pointer;
+}
+
+.page-projet .carte .container2 .outil {
+  margin-top: 30px;
+  margin-left: 0.5vw;
+  padding: 0px 10px;
+  width: 30%;
+  height: 70px;
+  background-color: #487E6F;
+  display: flex;
+  gap: 10px;
+}
+
+.page-projet .carte .container2 .outil div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3ec070;
+  height: 50%;
+  width: 40px;
+  margin-top: 5%;
 }
 /*# sourceMappingURL=style.css.map */

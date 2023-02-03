@@ -1,10 +1,11 @@
 [
     {
+        "id" : 1,
         "icon": "https://s2.svgbox.net/hero-solid.svg?ic=code&color=dab757",
         "titre": "language",
         "liste": [
-            "JS / TS",
-            "CSS/SASS",
+            "JS / TS / Node.js",
+            "CSS / SASS",
             "HTML",
             "C#",
             "PHP",
@@ -12,6 +13,7 @@
         ]
     },
     {
+        "id" : 2,
         "icon": "https://s2.svgbox.net/hero-solid.svg?ic=book-open&color=dab757",
         "titre": "Frameworks / Librairie",
         "liste": [
@@ -21,6 +23,7 @@
         ]
     },
     {
+        "id" : 3,
         "icon": "https://s2.svgbox.net/hero-outline.svg?ic=terminal&color=dab757",
         "titre": "Technologie / Logiciel",
         "liste": [
