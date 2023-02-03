@@ -8,9 +8,9 @@ header{
         .burger-button{ 
             z-index: 20;
             position: fixed;
-            transition: 0.5s;
             width: 60px;
             div{
+                transition: 0.7s;
                 width: 60px;
                 border: 2px solid $gold;
                 margin-bottom: 20px;
@@ -18,12 +18,14 @@ header{
 
         }
         .menu-burger-actif{
-            transform: rotateZ(90deg) translateY(10px);
+            div:nth-of-type(2){
+                width: 15px;
+            }
         }
     }
     nav{
         transform: translateX(-100%);
-        transition: 1s;
+        transition: 0.7s;
         position: fixed;
         top: 0px;
 
@@ -34,4 +36,5 @@ header{
     .nav-actif{
         transform: translateX(0%);
     }
+
 }

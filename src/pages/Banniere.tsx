@@ -1,3 +1,6 @@
+import Reseau from "../components/micro-components/Reseau";
+import data from "../data/reseau.json";
+
 const Banniere = () => {
     return(
         <div className="banniere">
@@ -10,10 +13,26 @@ const Banniere = () => {
                             <div></div>
                         </div>
                     </div>
-                    <div className="presentation">
-                        <h1>Portefolio</h1>
-                        <h1>Olivier Paradis Tardif</h1>
-                        <h2>Developpeur frontend</h2>
+                    <div className="presentation">  
+                        <h1>Olivier Paradis-Tardif</h1>
+                        <h2>Developpeur frontend et étudiant en Techniques <br/> d'intégration multimédia</h2>
+                        <div className="line">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div className="low-banniere">
+                        <div className="reseaux">
+                            {/* transformer en fonctional component */}
+                            {data.map(data => <Reseau
+                            icon = {data.icon}
+                            />)}
+                        </div>
+                        <div className="descriptif">
+                                <p>
+                                Salut, je suis un développeur frontend et présentement un étudiant à temps plein en techniques d'intégration multimédia au College de Maisonneuve 
+                                </p>
+                        </div>
                     </div>
                 </div>
             </div>

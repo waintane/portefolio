@@ -6,8 +6,8 @@ const Header = () => {
             <header>
                 <div className="burger"><MenuBurger/></div>
                 <nav>
+                    <a href="#competence">COMPÉTENCE</a>
                     <a href="">PROJET</a>
-                    <a href="">À PROPOS</a>
                     <a href="">CONTACT</a>
                 </nav>
             </header>
