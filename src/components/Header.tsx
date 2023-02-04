@@ -13,7 +13,7 @@ const Header = () => {
                         <div className="line"></div>
                     </div>
                     <div className="header-element" onClick={activeBurger}>
-                        <a href="">PROJET</a>
+                        <a href="#projet">PROJET</a>
                         <div className="line"></div>
                     </div>
                     <div className="header-element" onClick={activeBurger}>
