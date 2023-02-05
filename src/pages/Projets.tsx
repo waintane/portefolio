@@ -9,21 +9,6 @@ const Projets = () => {
                 <div className="line"></div>
             </div>
 
-            <div className="filtre">
-                <div>
-                    <h3>Filtre:</h3>
-                </div>
-                <div>
-                    <h3>Date</h3>
-                </div>
-                <div>
-                    <h3>Programmation</h3>
-                </div>
-                <div>
-                    <h3>Design</h3>
-                </div>
-            </div>
-
             <div className="projets">
 
                 {data.map(data => <CarteProjet

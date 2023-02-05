@@ -1,32 +1,33 @@
 .competence{
     margin: 0px 4vw;
-    height: 600px;
 
     .titre{
 
         h2{
             margin-top: 80px;
             margin-bottom: 10px;
-            font-size: clamp(20px, 2.5vw, 50px);
+            font-size: clamp(25px, 2.6vw, 50px);
             font-family: Montserrat;
             color: rgb(1, 22, 1);
         }
         .line{
-            width: clamp(100px, 15vw, 300px);
+            width: clamp(150px, 15vw, 300px);
             border: 2px solid $gold;
             margin-bottom: 60px;
         }
     }
 
     .tabs{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: clamp(50px, 8vw, 200px);
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
 
         .carte{
             border-radius: 5px;
             background-color: $dark;
-            height: clamp(100px, 33vw, 600px);
+            width: 100%;
+            height: clamp(350px, 33vw, 600px);
             text-align: center;
             color: white;
 
@@ -37,20 +38,89 @@
             }
 
             h3{
-                font-size: clamp(20px, 1.6vw, 43px);
+                font-size: clamp(24px, 1.7vw, 43px);
             }
             p{
-                font-size: clamp(16px, 1.3vw, 35px);
+                font-size: clamp(17px, 1.4vw, 35px);
             }
         }
 
         div:nth-of-type(2){
             background-color: $mainColor;
-            margin-top: clamp(20px, 7vw, 300px);
         }
-        div:nth-of-type(3){
+    }
+}
+@media screen and (max-width: 1099px) and (min-width: 700px){
+    .competence{
+        .tabs{
+            .carte{
+                height: clamp(280px, 33vw, 600px);
+            }
+            div:nth-of-type(1){
+                grid-area: a;
+                height: clamp(570px, 67vw, 1200px);
+            }
+            div:nth-of-type(2){
+                grid-area: b;
+            }
+            div:nth-of-type(3){
+                grid-area: c;
+            }
 
-            margin-top: clamp(10px, 3vw, 200px);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            'a b' 
+            'a c';
+
+            gap: 10px;
+        }
+    }
+}
+@media screen and (min-width: 1100px){
+    .competence{
+        margin: 0px 4vw;
+    
+        .titre{
+    
+            h2{
+                margin-top: 80px;
+                margin-bottom: clamp(10px, 1.3vw, 100px);;
+            }
+            .line{
+                width: clamp(100px, 15vw, 300px);
+                border: 2px solid $gold;
+                margin-bottom: 60px;
+            }
+        }
+    
+        .tabs{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: clamp(50px, 8vw, 200px);
+    
+            .carte{
+                width: 100%;
+                border-radius: 5px;
+                background-color: $dark;
+                height: clamp(100px, 33vw, 1500px);
+                text-align: center;
+                color: white;
+    
+                img{
+                    margin-top: 10px;
+                    width: clamp(30px, 6vw, 200px);
+                    height: clamp(30px, 6vw, 200px);
+                }
+            }
+    
+            div:nth-of-type(2){
+                margin-top: clamp(20px, 7vw, 300px);
+            }
+            div:nth-of-type(3){
+    
+                margin-top: clamp(10px, 3vw, 200px);
+            }
         }
     }
 }

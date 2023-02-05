@@ -408,6 +408,11 @@ header .nav-actif {
   transform: translateX(0%);
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body .banniere {
   color: white;
   height: 660px;
@@ -432,12 +437,16 @@ body .banniere .background-filter .content-banniere {
 }
 
 body .banniere .background-filter .content-banniere .contacte-moi h3 {
-  font-size: clamp(16px, 1.2vw, 25px);
+  font-size: clamp(16px, 1.2vw, 30px);
   background-color: #3f3f3f;
-  width: clamp(170px, 15%, 270px);
-  padding: 15px;
+  width: clamp(170px, 15%, 300px);
+  padding: clamp(10px, 1.5vw, 35px);
   border: 2px solid #DAB757;
   text-align: center;
+}
+
+body .banniere .background-filter .content-banniere .contacte-moi h3:hover {
+  cursor: pointer;
 }
 
 body .banniere .background-filter .content-banniere .presentation {
@@ -491,13 +500,8 @@ body .banniere h1, body .banniere h2 {
 
 @media screen and (min-width: 1100px) {
   body .banniere {
-    color: white;
-    height: clamp(680px, 41vw, 2000px);
+    height: clamp(670px, 41vw, 2000px);
     width: 100vw;
-    background-image: url(./img/banniere.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 45%;
   }
   body .banniere .background-filter {
     display: flex;
@@ -505,19 +509,13 @@ body .banniere h1, body .banniere h2 {
     background-color: rgba(0, 0, 0, 0.3);
     height: clamp(640px, 39.1vw, 1960px);
     width: 100%;
-    padding-top: 40px;
+    padding: 1vw 0px;
   }
   body .banniere .background-filter .content-banniere {
     margin: 0px 4vw;
   }
   body .banniere .background-filter .content-banniere .contacte-moi h3 {
-    font-size: clamp(16px, 1.2vw, 25px);
-    background-color: #3f3f3f;
-    width: clamp(170px, 15%, 270px);
-    padding: 15px;
-    border: 2px solid #DAB757;
     margin-left: auto;
-    text-align: center;
   }
   body .banniere .background-filter .content-banniere .contacte-moi .line div:nth-of-type(1) {
     width: clamp(150px, 13%, 230px);
@@ -532,16 +530,6 @@ body .banniere h1, body .banniere h2 {
   }
   body .banniere .background-filter .content-banniere .presentation {
     margin-top: clamp(50px, 6vw, 150px);
-  }
-  body .banniere .background-filter .content-banniere .presentation h1 {
-    font-family: Montserrat;
-    margin-bottom: 20px;
-    font-size: clamp(30px, 3.4vw, 80px);
-  }
-  body .banniere .background-filter .content-banniere .presentation h2 {
-    font-family: Montserrat;
-    font-size: clamp(25px, 2.7vw, 70px);
-    margin-bottom: 40px;
   }
   body .banniere .background-filter .content-banniere .presentation .line div:first-of-type {
     border: 2px solid #DAB757;
@@ -569,6 +557,7 @@ body .banniere h1, body .banniere h2 {
     width: clamp(50px, 7vw, 600px);
     background-color: white;
     border: 4px solid #DAB757;
+    border-radius: 5px;
   }
   body .banniere .background-filter .content-banniere .low-banniere .reseaux .container-icon img {
     height: clamp(30px, 5vw, 400px);
@@ -578,11 +567,10 @@ body .banniere h1, body .banniere h2 {
   }
   body .banniere .background-filter .content-banniere .low-banniere .descriptif {
     border-radius: 5px;
-    font-size: clamp(17px, 1.5vw, 40px);
     margin-left: auto;
     padding: 20px;
-    width: clamp(300px, 35vw, 900px);
-    height: clamp(150px, 12vw, 700px);
+    width: clamp(500px, 35vw, 900px);
+    height: clamp(180px, 12vw, 700px);
     background-color: #3f3f3f;
   }
   body .banniere h1, body .banniere h2 {
@@ -593,33 +581,33 @@ body .banniere h1, body .banniere h2 {
 
 .competence {
   margin: 0px 4vw;
-  height: 600px;
 }
 
 .competence .titre h2 {
   margin-top: 80px;
   margin-bottom: 10px;
-  font-size: clamp(20px, 2.5vw, 50px);
+  font-size: clamp(25px, 2.6vw, 50px);
   font-family: Montserrat;
   color: #011601;
 }
 
 .competence .titre .line {
-  width: clamp(100px, 15vw, 300px);
+  width: clamp(150px, 15vw, 300px);
   border: 2px solid #DAB757;
   margin-bottom: 60px;
 }
 
 .competence .tabs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: clamp(50px, 8vw, 200px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .competence .tabs .carte {
   border-radius: 5px;
   background-color: #3f3f3f;
-  height: clamp(100px, 33vw, 600px);
+  width: 100%;
+  height: clamp(350px, 33vw, 600px);
   text-align: center;
   color: white;
 }
@@ -631,70 +619,100 @@ body .banniere h1, body .banniere h2 {
 }
 
 .competence .tabs .carte h3 {
-  font-size: clamp(20px, 1.6vw, 43px);
+  font-size: clamp(24px, 1.7vw, 43px);
 }
 
 .competence .tabs .carte p {
-  font-size: clamp(16px, 1.3vw, 35px);
+  font-size: clamp(17px, 1.4vw, 35px);
 }
 
 .competence .tabs div:nth-of-type(2) {
   background-color: #487E6F;
-  margin-top: clamp(20px, 7vw, 300px);
 }
 
-.competence .tabs div:nth-of-type(3) {
-  margin-top: clamp(10px, 3vw, 200px);
+@media screen and (max-width: 1099px) and (min-width: 700px) {
+  .competence .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'a b'  'a c';
+    gap: 10px;
+  }
+  .competence .tabs .carte {
+    height: clamp(280px, 33vw, 600px);
+  }
+  .competence .tabs div:nth-of-type(1) {
+    grid-area: a;
+    height: clamp(570px, 67vw, 1200px);
+  }
+  .competence .tabs div:nth-of-type(2) {
+    grid-area: b;
+  }
+  .competence .tabs div:nth-of-type(3) {
+    grid-area: c;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .competence {
+    margin: 0px 4vw;
+  }
+  .competence .titre h2 {
+    margin-top: 80px;
+    margin-bottom: clamp(10px, 1.3vw, 100px);
+  }
+  .competence .titre .line {
+    width: clamp(100px, 15vw, 300px);
+    border: 2px solid #DAB757;
+    margin-bottom: 60px;
+  }
+  .competence .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: clamp(50px, 8vw, 200px);
+  }
+  .competence .tabs .carte {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    height: clamp(100px, 33vw, 1500px);
+    text-align: center;
+    color: white;
+  }
+  .competence .tabs .carte img {
+    margin-top: 10px;
+    width: clamp(30px, 6vw, 200px);
+    height: clamp(30px, 6vw, 200px);
+  }
+  .competence .tabs div:nth-of-type(2) {
+    margin-top: clamp(20px, 7vw, 300px);
+  }
+  .competence .tabs div:nth-of-type(3) {
+    margin-top: clamp(10px, 3vw, 200px);
+  }
 }
 
 .page-projet .titre {
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   width: 100vw;
   background-color: #487E6F;
-  height: 150px;
+  height: clamp(150px, 12vw, 400px);
 }
 
 .page-projet .titre h2 {
   margin-left: 4vw;
   padding-top: 30px;
   margin-bottom: 20px;
-  font-size: clamp(20px, 2.5vw, 50px);
+  font-size: clamp(25px, 2.6vw, 50px);
   font-family: Montserrat;
   color: white;
 }
 
 .page-projet .titre .line {
   margin-left: 4vw;
-  width: clamp(50px, 10vw, 200px);
+  width: clamp(80px, 9vw, 200px);
   border: 2px solid #DAB757;
   margin-bottom: 60px;
-}
-
-.page-projet .filtre {
-  margin-top: 50px;
-  display: flex;
-  gap: clamp(40px, 6vw, 200px);
-  margin-bottom: 100px;
-}
-
-.page-projet .filtre div {
-  background-color: #3f3f3f;
-  text-align: center;
-  width: clamp(200px, 14vw, 500px);
-}
-
-.page-projet .filtre div h3 {
-  color: #DAB757;
-  font-family: Montserrat;
-  font-size: clamp(20px, 1.5vw, 60px);
-}
-
-.page-projet .filtre div:first-of-type {
-  text-align: left;
-}
-
-.page-projet .filtre div:first-of-type h3 {
-  margin-left: 4vw;
 }
 
 .page-projet .carte {
@@ -703,8 +721,7 @@ body .banniere h1, body .banniere h2 {
   background-color: #3f3f3f;
   height: 250px;
   width: 87vw;
-  padding: 0px 4vw;
-  margin-bottom: 270px;
+  margin-bottom: clamp(50px, 24vw, 600px);
 }
 
 .page-projet .carte .container1 {
@@ -714,7 +731,7 @@ body .banniere h1, body .banniere h2 {
 
 .page-projet .carte .container1 h3 {
   padding-left: 10px;
-  font-size: clamp(18px, 1.6vw, 45px);
+  font-size: clamp(20px, 1.6vw, 43px);
 }
 
 .page-projet .carte .container1 img {
@@ -736,16 +753,22 @@ body .banniere h1, body .banniere h2 {
 .page-projet .carte .container2 .bouton {
   margin-top: 200px;
   margin-bottom: 20px;
+  height: clamp(60px, 5vw, 400px);
   width: clamp(180px, 25vw, 450px);
   padding: 10px 20px;
-  height: 80px;
+  border-radius: 5px;
+  font-size: clamp(20px, 1.6vw, 43px);
+  font-weight: 1000;
+  font-family: montserrat;
   background-color: #487E6F;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-projet .carte .container2 .bouton div {
   width: clamp(80px, 10vw, 200px);
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,6 +781,7 @@ body .banniere h1, body .banniere h2 {
   height: 40px;
   background-color: #487E6F;
   padding: 10px 10px 10px 10px;
+  border-radius: 5px;
   display: flex;
   gap: 20px;
 }
@@ -789,12 +813,159 @@ body .banniere h1, body .banniere h2 {
   height: 80px;
 }
 
-.page-projet .carte:nth-of-type(even) .container2 .outil {
-  padding-bottom: 20px;
-}
-
 .page-projet .carte:nth-of-type(even) .container2 .outil div {
   height: 50px;
+}
+
+@media screen and (max-width: 1099px) and (min-width: 700px) {
+  .page-projet .carte {
+    height: clamp(300px, 15vw, 1000px);
+    width: 100vw;
+  }
+  .page-projet .carte .container1 {
+    width: 55vw;
+    margin-left: 4vw;
+  }
+  .page-projet .carte .container1 img {
+    width: 95%;
+    height: clamp(300px, 25vw, 1000px);
+  }
+  .page-projet .carte .container2 {
+    width: 40vw;
+    margin-right: 4vw;
+  }
+  .page-projet .carte .container2 .bouton {
+    margin-top: 20px;
+    height: clamp(40px, 4vw, 100px);
+    width: 80%;
+  }
+  .page-projet .carte .container2 .bouton div {
+    height: 100%;
+  }
+  .page-projet .carte .container2 .outil {
+    width: 80%;
+  }
+  .page-projet .carte .container2 .outil div {
+    width: 40px;
+    height: 80%;
+  }
+  .page-projet .carte:nth-of-type(even) .container1 {
+    margin-right: 4vw;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 {
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .bouton {
+    height: clamp(40px, 4vw, 100px);
+    display: flex;
+    align-items: center;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .bouton div {
+    height: 100%;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .outil div {
+    width: 40px;
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .page-projet .titre h2 {
+    margin-left: 4vw;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .page-projet .titre .line {
+    margin-left: 4vw;
+    width: clamp(80px, 9vw, 200px);
+    border: 2px solid #DAB757;
+    margin-bottom: 60px;
+  }
+  .page-projet .carte {
+    display: flex;
+    flex-direction: row;
+    background-color: #3f3f3f;
+    height: clamp(200px, 15vw, 1000px);
+    width: 87vw;
+    padding: 0px 4vw;
+  }
+  .page-projet .carte .container1 {
+    width: 40vw;
+    color: white;
+  }
+  .page-projet .carte .container1 h3 {
+    padding-left: 10px;
+  }
+  .page-projet .carte .container1 img {
+    width: 35vw;
+    height: clamp(380px, 27vw, 1000px);
+    background-color: black;
+    border: 10px solid #3f3f3f;
+  }
+  .page-projet .carte .container2 {
+    padding: 0px 15px;
+  }
+  .page-projet .carte .container2 p {
+    color: white;
+    font-size: clamp(16px, 1.5vw, 40px);
+  }
+  .page-projet .carte .container2 .bouton {
+    margin-top: clamp(160px, 12vw, 400px);
+    margin-bottom: 20px;
+    width: clamp(180px, 25vw, 450px);
+    padding: 10px 20px;
+    background-color: #487E6F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-projet .carte .container2 .bouton div {
+    width: clamp(80px, 10vw, 200px);
+    height: clamp(50px, 80%, 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #DAB757;
+  }
+  .page-projet .carte .container2 .outil {
+    width: clamp(130px, 18vw, 350px);
+    height: clamp(40px, 2vw, 200px);
+    background-color: #487E6F;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    gap: 20px;
+  }
+  .page-projet .carte .container2 .outil div {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-projet .carte:nth-of-type(even) {
+    margin-left: auto;
+    flex-direction: row-reverse;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .bouton {
+    padding: 30px 20px;
+    height: 1000px;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .bouton div {
+    height: clamp(70px, 90%, 500px);
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .outil {
+    padding-bottom: 20px;
+  }
+  .page-projet .carte:nth-of-type(even) .container2 .outil div {
+    height: 50px;
+  }
 }
 
 body {

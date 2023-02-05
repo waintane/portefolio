@@ -16,6 +16,7 @@ const Header = () => {
                         <a href="#projet">PROJET</a>
                         <div className="line"></div>
                     </div>
+
                     <div className="header-element" onClick={activeBurger}>
                         <a href="">CONTACT</a>
                         <div className="line"></div>

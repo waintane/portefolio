@@ -10,7 +10,7 @@ const CarteCompetence = ({icon, titre, liste, id}: IPROPS) => {
         <div className="carte">
             <img src={icon} alt="" />
             <h3> {titre} </h3>
-            <div>
+            <div className="liste">
                 {liste.map(e =>
                 <p key = {id++}> {e} </p>)}
             </div>
