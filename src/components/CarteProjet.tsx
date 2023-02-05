@@ -12,23 +12,23 @@ const CarteProjet = ({id, titre, img, description, github, projet, outil}: IPROP
     return(
         <div className="carte">
             <div className="container1">
-                <h3>Titre</h3>
-                <img src="" alt="" />
+                <h3>{titre}</h3>
+                <img src={img} alt="" />
             </div>
             <div className="container2">
                 <div className="description">
                     <p>
-                        description awdawd  awdad awdaw awdawd awdawd adwad adwada awdwadadsadlwpadl awda w
-                        pdlawp lwadsef esfsef sefsfe sefsef
+                        {description}
                     </p>
                 </div>
                 <div className="bouton">
-                    <div>GitHub</div>
-                    <div>Projet</div>
+                    <div><a href={github}>GitHub</a></div>
+                    <div><a href={projet}>Projet</a></div>
                 </div>
                 <div className="outil">
-                    <div>php</div>
-                    <div>css</div>
+                    {outil.map(e =>
+                        <div key = {id++}> {e} </div>
+                    )}
                 </div>
             </div>
         </div>

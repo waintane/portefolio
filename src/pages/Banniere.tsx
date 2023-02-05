@@ -31,7 +31,7 @@ const Banniere = () => {
                         </div>
                         <div className="descriptif">
                                 <p>
-                                Salut, je suis un développeur frontend pationé et présentement un étudiant des 3e année à 
+                                Salut, je suis un développeur frontend passionné et présentement un étudiant en 3eme année à 
                                 temps plein en techniques d'intégration multimédia au Collège de Maisonneuve 
                                 </p>
                         </div>

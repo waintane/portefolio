@@ -717,45 +717,46 @@ body .banniere h1, body .banniere h2 {
 
 .page-projet .carte {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   background-color: #3f3f3f;
-  height: 250px;
-  width: 87vw;
-  margin-bottom: clamp(50px, 24vw, 600px);
+  width: 100vw;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .page-projet .carte .container1 {
-  width: 40vw;
+  width: 92vw;
   color: white;
 }
 
 .page-projet .carte .container1 h3 {
-  padding-left: 10px;
   font-size: clamp(20px, 1.6vw, 43px);
 }
 
 .page-projet .carte .container1 img {
-  width: 35vw;
-  height: 400px;
+  width: 100%;
+  height: clamp(300px, 60vw, 1000px);
+  object-fit: cover;
   background-color: black;
-  border: 10px solid #3f3f3f;
 }
 
 .page-projet .carte .container2 {
-  padding: 0px 15px;
+  margin: 0px 4vw;
 }
 
 .page-projet .carte .container2 p {
   color: white;
   font-size: clamp(16px, 1.5vw, 40px);
+  background-color: #487E6F;
+  padding: 20px 5px;
+  border-radius: 5px;
 }
 
 .page-projet .carte .container2 .bouton {
-  margin-top: 200px;
   margin-bottom: 20px;
-  height: clamp(60px, 5vw, 400px);
-  width: clamp(180px, 25vw, 450px);
-  padding: 10px 20px;
+  height: clamp(90px, 7vw, 400px);
+  width: 100%;
   border-radius: 5px;
   font-size: clamp(20px, 1.6vw, 43px);
   font-weight: 1000;
@@ -767,8 +768,10 @@ body .banniere h1, body .banniere h2 {
 }
 
 .page-projet .carte .container2 .bouton div {
-  width: clamp(80px, 10vw, 200px);
+  width: clamp(100px, 30vw, 400px);
+  height: clamp(30px, 50%, 300px);
   border-radius: 5px;
+  margin: 0px 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -776,59 +779,57 @@ body .banniere h1, body .banniere h2 {
   border: 4px solid #DAB757;
 }
 
+.page-projet .carte .container2 .bouton div a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-projet .carte .container2 .bouton div a:active {
+  color: black;
+}
+
 .page-projet .carte .container2 .outil {
-  width: clamp(130px, 18vw, 350px);
+  width: 100%;
   height: 40px;
   background-color: #487E6F;
-  padding: 10px 10px 10px 10px;
   border-radius: 5px;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
 
 .page-projet .carte .container2 .outil div {
-  width: 50px;
-  background-color: #5be6bc;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.page-projet .carte:nth-of-type(even) {
-  margin-left: auto;
-  flex-direction: row-reverse;
-}
-
-.page-projet .carte:nth-of-type(even) .container2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.page-projet .carte:nth-of-type(even) .container2 .bouton {
-  padding-bottom: 15px;
-}
-
-.page-projet .carte:nth-of-type(even) .container2 .bouton div {
-  height: 80px;
-}
-
-.page-projet .carte:nth-of-type(even) .container2 .outil div {
-  height: 50px;
+  margin-left: 5px;
+  height: 70%;
+  background-color: #5be6bc;
+  padding: 0px 2px;
+  border: 2px solid #DAB757;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1099px) and (min-width: 700px) {
   .page-projet .carte {
+    flex-direction: row;
     height: clamp(300px, 15vw, 1000px);
     width: 100vw;
+    margin-bottom: 100px;
   }
   .page-projet .carte .container1 {
     width: 55vw;
     margin-left: 4vw;
   }
+  .page-projet .carte .container1 h3 {
+    padding: 0px;
+    margin: 60px 0px 20px 7px;
+  }
   .page-projet .carte .container1 img {
     width: 95%;
     height: clamp(300px, 25vw, 1000px);
+    border: 5px solid #3f3f3f;
+    border-radius: 10px;
   }
   .page-projet .carte .container2 {
     width: 40vw;
@@ -836,18 +837,24 @@ body .banniere h1, body .banniere h2 {
   }
   .page-projet .carte .container2 .bouton {
     margin-top: 20px;
-    height: clamp(40px, 4vw, 100px);
+    padding: 0px 0px;
+    height: clamp(50px, 4vw, 100px);
     width: 80%;
   }
   .page-projet .carte .container2 .bouton div {
-    height: 100%;
+    margin: 0px 20px 0px 5px;
+    height: 70%;
+    width: 40%;
   }
   .page-projet .carte .container2 .outil {
     width: 80%;
   }
   .page-projet .carte .container2 .outil div {
-    width: 40px;
-    height: 80%;
+    height: 70%;
+  }
+  .page-projet .carte:nth-of-type(even) {
+    display: flex;
+    flex-direction: row-reverse;
   }
   .page-projet .carte:nth-of-type(even) .container1 {
     margin-right: 4vw;
@@ -858,21 +865,19 @@ body .banniere h1, body .banniere h2 {
     flex-direction: column;
     align-items: flex-start;
   }
+  .page-projet .carte:nth-of-type(even) .container2 p {
+    color: white;
+  }
   .page-projet .carte:nth-of-type(even) .container2 .bouton {
-    height: clamp(40px, 4vw, 100px);
     display: flex;
     align-items: center;
-  }
-  .page-projet .carte:nth-of-type(even) .container2 .bouton div {
-    height: 100%;
-  }
-  .page-projet .carte:nth-of-type(even) .container2 .outil div {
-    width: 40px;
-    height: 80%;
   }
 }
 
 @media screen and (min-width: 1100px) {
+  .page-projet .titre {
+    margin-bottom: 100px;
+  }
   .page-projet .titre h2 {
     margin-left: 4vw;
     padding-top: 30px;
@@ -885,12 +890,14 @@ body .banniere h1, body .banniere h2 {
     margin-bottom: 60px;
   }
   .page-projet .carte {
-    display: flex;
     flex-direction: row;
+    align-items: flex-start;
     background-color: #3f3f3f;
     height: clamp(200px, 15vw, 1000px);
     width: 87vw;
     padding: 0px 4vw;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: clamp(50px, 24vw, 600px);
   }
   .page-projet .carte .container1 {
     width: 40vw;
@@ -900,46 +907,48 @@ body .banniere h1, body .banniere h2 {
     padding-left: 10px;
   }
   .page-projet .carte .container1 img {
-    width: 35vw;
+    width: 40vw;
     height: clamp(380px, 27vw, 1000px);
+    border-radius: 0px 0px 5px 5px;
     background-color: black;
     border: 10px solid #3f3f3f;
   }
-  .page-projet .carte .container2 {
-    padding: 0px 15px;
-  }
   .page-projet .carte .container2 p {
+    height: clamp(200px, 15vw, 1000px);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     font-size: clamp(16px, 1.5vw, 40px);
   }
   .page-projet .carte .container2 .bouton {
-    margin-top: clamp(160px, 12vw, 400px);
+    padding: 0px 20px;
     margin-bottom: 20px;
+    margin-top: -20px;
     width: clamp(180px, 25vw, 450px);
-    padding: 10px 20px;
+    height: clamp(50px, 6vw, 400px);
     background-color: #487E6F;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .page-projet .carte .container2 .bouton div {
+    margin: 0px;
     width: clamp(80px, 10vw, 200px);
-    height: clamp(50px, 80%, 400px);
+    height: clamp(50px, 70%, 400px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border: 4px solid #DAB757;
   }
   .page-projet .carte .container2 .outil {
-    width: clamp(130px, 18vw, 350px);
-    height: clamp(40px, 2vw, 200px);
+    width: clamp(130px, 18.5vw, 350px);
+    height: clamp(40px, 2.3vw, 300px);
     background-color: #487E6F;
     padding: 10px 10px 10px 10px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
   .page-projet .carte .container2 .outil div {
-    width: 50px;
+    font-size: clamp(16px, 1.3vw, 25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -947,24 +956,12 @@ body .banniere h1, body .banniere h2 {
   .page-projet .carte:nth-of-type(even) {
     margin-left: auto;
     flex-direction: row-reverse;
+    border-radius: 5px 0px 0px 5px;
   }
   .page-projet .carte:nth-of-type(even) .container2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-  .page-projet .carte:nth-of-type(even) .container2 .bouton {
-    padding: 30px 20px;
-    height: 1000px;
-  }
-  .page-projet .carte:nth-of-type(even) .container2 .bouton div {
-    height: clamp(70px, 90%, 500px);
-  }
-  .page-projet .carte:nth-of-type(even) .container2 .outil {
-    padding-bottom: 20px;
-  }
-  .page-projet .carte:nth-of-type(even) .container2 .outil div {
-    height: 50px;
   }
 }
 

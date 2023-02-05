@@ -1,35 +1,46 @@
 [
     {
         "id": 1,
-        "titre": "titre",
-        "img": "url....",
-        "description": "sfeks lkselfkselfks lfkselfk skflsefkls lsefkls fkelfksl efkslf elf seklfks lfek slkselfk slefkslf selfk",
-        "github": "url...",
-        "projet": "url....",
+        "titre": "Contact me app express.js",
+        "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/a0c97b05-e3d0-4f33-9470-ed08f68a4702_rw_1200.png?h=cfccb09563f8f5f12443b12caa295f13",
+        "description": "Date: 2023. Un formulaire permettant de me contacter par courriel à l'aide du module nodemailer de express.js. Lorsque le email m'est envoyé vous recevrez un courriel qui confirme que je l'ai bien reçu et le serveur node.js est hoster sur replit.com",
+        "github": "https://github.com/waintane/contact_me_app",
+        "projet": "https://contactmeapp.olivierparadis.repl.co/",
         "outil": [
-            "php", "css"
+            "express", "css", "node.js", "js"
         ]
     },
     {
         "id": 2,
-        "titre": "titre",
-        "img": "url....",
-        "description": "sfeks lkselfkselfks lfkselfk skflsefkls lsefkls fkelfksl efkslf elf seklfks lfek slkselfk slefkslf selfk",
-        "github": "url...",
-        "projet": "url....",
+        "titre": "Projet panier d'achat React.js",
+        "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/7ecba8f7-062a-4c24-a284-067ffea2f0b0_rw_1200.png?h=20c94f1055e0eb79261ba944d159a07d",
+        "description": "Date: 2022. Projet ayant pour but d'être un mini site web react.js proposant un catalogue de vêtement pouvant être mis dans un panier d'achat, entièrement écrit en javascript et css.",
+        "github": "https://github.com/waintane/Shopping-cart",
+        "projet": "https://waintane.github.io/Shopping-cart/",
         "outil": [
-            "php", "css"
+            "react", "css", "js"
         ]
     },
     {
         "id": 3,
-        "titre": "titre",
-        "img": "url....",
-        "description": "sfeks lkselfkselfks lfkselfk skflsefkls lsefkls fkelfksl efkslf elf seklfks lfek slkselfk slefkslf selfk",
-        "github": "url...",
-        "projet": "url....",
+        "titre": "Space DIpDop",
+        "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/e5f117f4-d6f7-4499-8a4e-2459a0791302_rw_1920.png?h=56979d5b50a3ce1d3580cf84d9a5e474",
+        "description": "Date: 2022. Un jeu 3D réalisé sur unity. L'objectif étant d'atteindre la vitesse la plus haute possible sans rentrer en collision avec un obstacle.",
+        "github": "#",
+        "projet": "https://jeu.tim.cmaisonneuve.qc.ca/galerie_unity/3j3/a2021/OlivierParadisTardif/index.html",
         "outil": [
-            "php", "css"
+            "c#", "unity"
+        ]
+    },
+    {
+        "id": 4,
+        "titre": "Les fragments oubliés",
+        "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/c75427c9-561e-415f-8c5b-5658f028bafc_rw_1920.png?h=a76253bd8ac6da5f31c5af3f57384ccc",
+        "description": "Dans la création de ce projet à 5 j'ai eu l'occasion de travailler sur l'implémentation des assets dans unity ainsi que le code c# pour: le personnage et l'environnement",
+        "github": "https://github.com/Flolemc/projetJeuE6",
+        "projet": "#",
+        "outil": [
+            "c#", "unity"
         ]
     }
 ]
