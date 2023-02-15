@@ -24,6 +24,9 @@ body{
             .contacte-moi{
 
                 h3{
+                    transition: 0.5s;
+
+                    margin-top: 40 px;
                     font-size: clamp(16px, 1.2vw, 30px);
 
                     background-color: $dark;
@@ -31,9 +34,15 @@ body{
                     padding: clamp(10px, 1.5vw, 35px);
                     border: 2px solid $gold;
                     text-align: center;
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
                 }
                 h3:hover{
                     cursor: pointer;
+                    background-color: rgb(48, 48, 48);
                 }
             }
             .presentation{
@@ -146,6 +155,8 @@ body{
                         gap: 30px;
                         margin-top: 40px;   
                         .container-icon{
+                            transition: 0.5s;
+
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -165,6 +176,9 @@ body{
                                 object-fit: cover;
                                 color: $gold;
                             }
+                        }
+                        .container-icon:hover{
+                            transform: scale(1.05);
                         }
                     }
                     .descriptif{

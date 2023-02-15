@@ -344,10 +344,13 @@ header {
 
 header .burger {
   margin-top: 60px;
-  margin-left: 4vw;
 }
 
 header .burger .burger-button {
+  padding-left: 4vw;
+  padding-right: 40px;
+  background-color: rgba(34, 34, 34, 0.664);
+  backdrop-filter: blur(2px);
   z-index: 20;
   position: fixed;
   width: 60px;
@@ -357,7 +360,11 @@ header .burger .burger-button div {
   transition: 0.7s;
   width: 60px;
   border: 2px solid #DAB757;
-  margin-bottom: 20px;
+  margin: 20px 0px;
+}
+
+header .burger .burger-button {
+  cursor: pointer;
 }
 
 header .burger .menu-burger-actif div:nth-of-type(2) {
@@ -375,7 +382,7 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: clamp(20px, 3vw, 100px);
-  padding-top: 120px;
+  padding-top: 150px;
   padding-left: 4vw;
 }
 
@@ -408,6 +415,28 @@ header .nav-actif {
   transform: translateX(0%);
 }
 
+@media screen and (max-width: 700px) {
+  header .burger .burger-button {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: none;
+  }
+}
+
+footer {
+  background-color: #1d1d1d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+footer p {
+  margin: 0px;
+  padding: 0px;
+  font-size: clamp(15px, 1.5vw, 30px);
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -437,16 +466,24 @@ body .banniere .background-filter .content-banniere {
 }
 
 body .banniere .background-filter .content-banniere .contacte-moi h3 {
+  transition: 0.5s;
+  margin-top: 40 px;
   font-size: clamp(16px, 1.2vw, 30px);
-  background-color: #3f3f3f;
+  background-color: #333333;
   width: clamp(170px, 15%, 300px);
   padding: clamp(10px, 1.5vw, 35px);
   border: 2px solid #DAB757;
   text-align: center;
 }
 
+body .banniere .background-filter .content-banniere .contacte-moi h3 a {
+  color: white;
+  text-decoration: none;
+}
+
 body .banniere .background-filter .content-banniere .contacte-moi h3:hover {
   cursor: pointer;
+  background-color: #303030;
 }
 
 body .banniere .background-filter .content-banniere .presentation {
@@ -475,7 +512,7 @@ body .banniere .background-filter .content-banniere .descriptif {
   padding: 20px;
   width: clamp(300px, 80vw, 1200px);
   height: clamp(150px, 12vw, 700px);
-  background-color: #3f3f3f;
+  background-color: #333333;
 }
 
 body .banniere h1, body .banniere h2 {
@@ -549,6 +586,7 @@ body .banniere h1, body .banniere h2 {
     margin-top: 40px;
   }
   body .banniere .background-filter .content-banniere .low-banniere .reseaux .container-icon {
+    transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -565,13 +603,16 @@ body .banniere h1, body .banniere h2 {
     object-fit: cover;
     color: #DAB757;
   }
+  body .banniere .background-filter .content-banniere .low-banniere .reseaux .container-icon:hover {
+    transform: scale(1.05);
+  }
   body .banniere .background-filter .content-banniere .low-banniere .descriptif {
     border-radius: 5px;
     margin-left: auto;
     padding: 20px;
     width: clamp(500px, 35vw, 900px);
     height: clamp(180px, 12vw, 700px);
-    background-color: #3f3f3f;
+    background-color: #333333;
   }
   body .banniere h1, body .banniere h2 {
     padding: 0px;
@@ -605,7 +646,7 @@ body .banniere h1, body .banniere h2 {
 
 .competence .tabs .carte {
   border-radius: 5px;
-  background-color: #3f3f3f;
+  background-color: #333333;
   width: 100%;
   height: clamp(350px, 33vw, 600px);
   text-align: center;
@@ -673,7 +714,7 @@ body .banniere h1, body .banniere h2 {
   .competence .tabs .carte {
     width: 100%;
     border-radius: 5px;
-    background-color: #3f3f3f;
+    background-color: #333333;
     height: clamp(100px, 33vw, 1500px);
     text-align: center;
     color: white;
@@ -719,7 +760,7 @@ body .banniere h1, body .banniere h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #3f3f3f;
+  background-color: #333333;
   width: 100vw;
   margin-bottom: 50px;
   padding-bottom: 30px;
@@ -768,6 +809,7 @@ body .banniere h1, body .banniere h2 {
 }
 
 .page-projet .carte .container2 .bouton div {
+  transition: 0.5s;
   width: clamp(100px, 30vw, 400px);
   height: clamp(30px, 50%, 300px);
   border-radius: 5px;
@@ -786,6 +828,10 @@ body .banniere h1, body .banniere h2 {
 
 .page-projet .carte .container2 .bouton div a:active {
   color: black;
+}
+
+.page-projet .carte .container2 .bouton div:hover {
+  transform: scale(1.05);
 }
 
 .page-projet .carte .container2 .outil {
@@ -828,7 +874,7 @@ body .banniere h1, body .banniere h2 {
   .page-projet .carte .container1 img {
     width: 95%;
     height: clamp(300px, 25vw, 1000px);
-    border: 5px solid #3f3f3f;
+    border: 5px solid #333333;
     border-radius: 10px;
   }
   .page-projet .carte .container2 {
@@ -892,8 +938,8 @@ body .banniere h1, body .banniere h2 {
   .page-projet .carte {
     flex-direction: row;
     align-items: flex-start;
-    background-color: #3f3f3f;
-    height: clamp(200px, 15vw, 1000px);
+    background-color: #333333;
+    height: clamp(200px, 17vw, 1000px);
     width: 87vw;
     padding: 0px 4vw;
     border-radius: 0px 5px 5px 0px;
@@ -908,10 +954,10 @@ body .banniere h1, body .banniere h2 {
   }
   .page-projet .carte .container1 img {
     width: 40vw;
-    height: clamp(380px, 27vw, 1000px);
+    height: clamp(380px, 26vw, 1000px);
     border-radius: 0px 0px 5px 5px;
     background-color: black;
-    border: 10px solid #3f3f3f;
+    border: 15px solid #333333;
   }
   .page-projet .carte .container2 p {
     height: clamp(200px, 15vw, 1000px);
@@ -965,9 +1011,75 @@ body .banniere h1, body .banniere h2 {
   }
 }
 
+.page-contact {
+  margin-top: 100px;
+  width: 100vw;
+  background-color: #487E6F;
+  padding: 0px 0px 40px 0px;
+}
+
+.page-contact .titre h2 {
+  margin-left: 4vw;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-size: clamp(25px, 2.6vw, 50px);
+  font-family: Montserrat;
+  color: white;
+}
+
+.page-contact .titre .line {
+  margin-left: 4vw;
+  width: clamp(80px, 9vw, 200px);
+  border: 2px solid #DAB757;
+  margin-bottom: 20px;
+}
+
+.page-contact .information {
+  margin-left: 4vw;
+  color: white;
+  font-size: clamp(20px, 1.5vw, 30px);
+}
+
+.page-contact .reseaux {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: 4vw;
+}
+
+.page-contact .reseaux .container-icon {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: clamp(50px, 6vw, 600px);
+  width: clamp(50px, 6vw, 600px);
+  background-color: white;
+  border: 4px solid #DAB757;
+  border-radius: 5px;
+}
+
+.page-contact .reseaux .container-icon img {
+  height: clamp(30px, 4vw, 400px);
+  width: clamp(30px, 4vw, 400px);
+  object-fit: cover;
+  color: #DAB757;
+}
+
+.page-contact .reseaux .container-icon:hover {
+  transform: scale(1.05);
+}
+
 body {
   font-family: sans-serif;
   width: 100vw;
   overflow-x: hidden;
+  background-image: url(./img/texture.jpg);
+  background-repeat: repeat;
+}
+
+body .App {
+  background-color: rgba(255, 255, 255, 0.849);
 }
 /*# sourceMappingURL=style.css.map */

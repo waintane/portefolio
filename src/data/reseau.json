@@ -1,14 +1,17 @@
 [
     {
         "id": 1,
-        "icon": "https://s2.svgbox.net/social.svg?ic=github&color=3f3f3f"
+        "icon": "https://s2.svgbox.net/social.svg?ic=github&color=3f3f3f",
+        "lien": "https://github.com/waintane"
     },
     {
         "id": 2,
-        "icon": "https://s2.svgbox.net/social.svg?ic=linkedin&color=3f3f3f"
+        "icon": "https://s2.svgbox.net/social.svg?ic=linkedin&color=3f3f3f",
+        "lien": "https://www.linkedin.com/in/olivier-paradis-tardif-429a2023b/"
     },
     {
         "id": 3,
-        "icon": "https://s2.svgbox.net/hero-solid.svg?ic=mail&color=3f3f3f"
+        "icon": "https://s2.svgbox.net/hero-solid.svg?ic=mail&color=3f3f3f",
+        "lien": "mailto:olitarpar@hotmail.com"
     }
 ]

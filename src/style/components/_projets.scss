@@ -77,6 +77,8 @@
                 justify-content: space-between;
                 align-items: center;
                 div{
+                    transition: 0.5s;
+
                     width: clamp(100px, 30vw, 400px);
                     height: clamp(30px, 50%, 300px);
                     border-radius: 5px;
@@ -96,6 +98,9 @@
                     a:active{
                         color: black;
                     }
+                }
+                div:hover{
+                    transform: scale(1.05);
                 }
             }
             .outil{
@@ -224,7 +229,7 @@
             align-items: flex-start;
             background-color: $dark;
             
-            height: clamp(200px, 15vw ,1000px);
+            height: clamp(200px, 17vw ,1000px);
             width: 87vw;
     
             padding: 0px 4vw;
@@ -240,13 +245,13 @@
                 }
                 img{
                     width: 40vw;
-                    height: clamp(380px, 27vw, 1000px);
+                    height: clamp(380px, 26vw, 1000px);
 
                     border-radius: 0px 0px 5px 5px;
     
                     background-color: black;
     
-                    border: 10px solid $dark;
+                    border: 15px solid $dark;
                 }
             }
             .container2{

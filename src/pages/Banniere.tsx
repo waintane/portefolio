@@ -7,7 +7,7 @@ const Banniere = () => {
             <div className="background-filter">
                 <div className="content-banniere">
                     <div className="contacte-moi">
-                        <h3>Contacter moi</h3>
+                        <h3><a href="#contact">Contacter moi</a></h3>
                         <div className="line">
                             <div></div>
                             <div></div>
@@ -15,7 +15,7 @@ const Banniere = () => {
                     </div>
                     <div className="presentation">  
                         <h1>Olivier Paradis-Tardif</h1>
-                        <h2>Developpeur frontend et étudiant en Techniques <br/> d'intégration multimédia</h2>
+                        <h2>Développeur frontend et étudiant en Techniques <br/> d'intégration multimédia</h2>
                         <div className="line">
                             <div></div>
                             <div></div>
@@ -27,6 +27,7 @@ const Banniere = () => {
                             {data.map(data => <Reseau
                             key = {data.id}
                             icon = {data.icon}
+                            lien = {data.lien}
                             />)}
                         </div>
                         <div className="descriptif">

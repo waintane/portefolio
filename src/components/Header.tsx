@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
 
                     <div className="header-element" onClick={activeBurger}>
-                        <a href="">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                         <div className="line"></div>
                     </div>
                 </nav>

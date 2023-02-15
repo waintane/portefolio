@@ -3,7 +3,7 @@
         "id": 1,
         "titre": "Contact me app express.js",
         "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/a0c97b05-e3d0-4f33-9470-ed08f68a4702_rw_1200.png?h=cfccb09563f8f5f12443b12caa295f13",
-        "description": "Date: 2023. Un formulaire permettant de me contacter par courriel à l'aide du module nodemailer de express.js. Lorsque le email m'est envoyé vous recevrez un courriel qui confirme que je l'ai bien reçu et le serveur node.js est hoster sur replit.com",
+        "description": "Date: 2023. Un formulaire permettant de me contacter par courriel à l'aide du module nodemailer de express.js. Lorsque le email m'est envoyé vous recevrez un courriel qui confirme que je l'ai bien reçu et le serveur node.js est hosté sur replit.com",
         "github": "https://github.com/waintane/contact_me_app",
         "projet": "https://contactmeapp.olivierparadis.repl.co/",
         "outil": [

@@ -22,8 +22,8 @@ const CarteProjet = ({id, titre, img, description, github, projet, outil}: IPROP
                     </p>
                 </div>
                 <div className="bouton">
-                    <div><a href={github}>GitHub</a></div>
-                    <div><a href={projet}>Projet</a></div>
+                    <div><a href={github} target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                    <div><a href={projet} target="_blank" rel="noopener noreferrer">Projet</a></div>
                 </div>
                 <div className="outil">
                     {outil.map(e =>

@@ -2,12 +2,13 @@
 
 @import "variables/couleur";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
 
 @import "components/header";
+@import "components/footer";
 @import "components/banniere";
 @import "components/competence";
 @import "components/projets";
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+@import "components/contact";
 
 @import "components/general";
