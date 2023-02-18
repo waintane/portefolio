@@ -12,13 +12,13 @@
     },
     {
         "id": 2,
-        "titre": "Projet panier d'achat React.js",
-        "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/7ecba8f7-062a-4c24-a284-067ffea2f0b0_rw_1200.png?h=20c94f1055e0eb79261ba944d159a07d",
-        "description": "Date: 2022. Projet ayant pour but d'être un mini site web react.js proposant un catalogue de vêtement pouvant être mis dans un panier d'achat, entièrement écrit en javascript et css.",
-        "github": "https://github.com/waintane/Shopping-cart",
-        "projet": "https://waintane.github.io/Shopping-cart/",
+        "titre": "Projet application météo React.js",
+        "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/52f58215-8160-4399-b6c5-9d01a4c9c85e/dfpm6yi-db205cb1-492d-4e70-b0bb-dd459258b566.png/v1/fill/w_1280,h_577,q_80,strp/capture_dcran_2023_02_17_211447_by_testdev9840_dfpm6yi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3IiwicGF0aCI6IlwvZlwvNTJmNTgyMTUtODE2MC00Mzk5LWI2YzUtOWQwMWE0YzljODVlXC9kZnBtNnlpLWRiMjA1Y2IxLTQ5MmQtNGU3MC1iMGJiLWRkNDU5MjU4YjU2Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.AUbdkQi2QMuX5fUnHaGn2Z2-wNfF5b6p0oykCeZnXH8",
+        "description": "Date: 2023. Application web utilisant openWheater api pour fetch la météo de la ville recherché pour ensuite afficher le tout",
+        "github": "https://github.com/waintane/wheater-app",
+        "projet": "https://waintane.github.io/wheater-app/",
         "outil": [
-            "react", "css", "js"
+            "react", "scss", "ts"
         ]
     },
     {
