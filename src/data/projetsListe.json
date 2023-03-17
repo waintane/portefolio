@@ -25,7 +25,7 @@
         "id": 3,
         "titre": "Project page d'un café avec React.js",
         "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/52f58215-8160-4399-b6c5-9d01a4c9c85e/dfqknsa-1113323a-db20-4eaa-bbd7-68eaecf16db9.png/v1/fill/w_1280,h_596,q_80,strp/depot_screenshot_project_by_testdev9840_dfqknsa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk2IiwicGF0aCI6IlwvZlwvNTJmNTgyMTUtODE2MC00Mzk5LWI2YzUtOWQwMWE0YzljODVlXC9kZnFrbnNhLTExMTMzMjNhLWRiMjAtNGVhYS1iYmQ3LTY4ZWFlY2YxNmRiOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BIOtqUIkA8o7HthpNE9bsEDkWAc8I_Mf5DhUaGHypeM",
-        "description": "Date: 2023. Application web utilisant React de maniere rudimentaire pour deployer un potentiel site d'un café",
+        "description": "Date: 2023. Application web utilisant React de maniere rudimentaire pour deployer le potentiel site d'un café",
         "github": "https://github.com/waintane/coffee-shop",
         "projet": "https://waintane.github.io/coffee-shop/",
         "outil": [
