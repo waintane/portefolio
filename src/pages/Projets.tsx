@@ -1,13 +1,36 @@
 import CarteProjet from "../components/CarteProjet";
 import data from "../data/projetsListe.json";
+import dataDesign from "../data/projetsDesign.json";
+import CarteProjetDesign from "../components/CarteProjetDesign";
 
 const Projets = () => {
     return(
         <div className="page-projet" id="projet">
+
             <div className="titre">
-                <h2>Mes projets</h2>
+                <h2>Projets Design</h2>
                 <div className="line"></div>
             </div>
+
+
+             <div className="projets">
+
+                {dataDesign.map(data => <CarteProjetDesign 
+                id= {data.id}
+                key= {data.id}
+                titre = {data.titre}
+                img = {data.img}
+                description = {data.description}
+                projet = {data.projet}
+                outil = {data.outil}
+                />)}
+            </div>
+
+            <div className="titre">
+                <h2>Projets programmation</h2>
+                <div className="line"></div>
+            </div>
+
 
             <div className="projets">
 
@@ -22,6 +45,7 @@ const Projets = () => {
                 outil = {data.outil}
                 />)}
             </div>
+            
         </div>
     )
 }
