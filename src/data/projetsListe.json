@@ -1,5 +1,27 @@
 [
     {
+        "id":32323243,
+        "titre": "Le nouveau",
+        "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/350a0f2a-75fe-4dc1-af51-9ee96aa6be65/dg0wcr7-167a7273-1f2c-4403-a9da-5720093b6c00.png/v1/fill/w_1280,h_591,q_80,strp/blog_design_by_picbank_dg0wcr7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTkxIiwicGF0aCI6IlwvZlwvMzUwYTBmMmEtNzVmZS00ZGMxLWFmNTEtOWVlOTZhYTZiZTY1XC9kZzB3Y3I3LTE2N2E3MjczLTFmMmMtNDQwMy1hOWRhLTU3MjAwOTNiNmMwMC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.2iPEW0TiU2bkKrJ2SkldeeKjjC3NWuDo2IdSwKpC3eA",
+        "description": "Date: 2023. Theme wordpress créé par Olivier Paradis-Tardif (moi) pour générer un site de nouvelles dans le style de Lapresse.",
+        "github": "https://github.com/waintane/wp-la-presse",
+        "projet": "https://youtu.be/o-ifdUFsN2o",
+        "outil":[
+            "wordpress", "scss", "js", "php"
+        ]
+    },
+    {
+        "id": 333426363453477,
+        "titre": "Project page d'un café avec React.js",
+        "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/52f58215-8160-4399-b6c5-9d01a4c9c85e/dfqknsa-1113323a-db20-4eaa-bbd7-68eaecf16db9.png/v1/fill/w_1280,h_596,q_80,strp/depot_screenshot_project_by_testdev9840_dfqknsa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk2IiwicGF0aCI6IlwvZlwvNTJmNTgyMTUtODE2MC00Mzk5LWI2YzUtOWQwMWE0YzljODVlXC9kZnFrbnNhLTExMTMzMjNhLWRiMjAtNGVhYS1iYmQ3LTY4ZWFlY2YxNmRiOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BIOtqUIkA8o7HthpNE9bsEDkWAc8I_Mf5DhUaGHypeM",
+        "description": "Date: 2023. Application web utilisant React de manière rudimentaire pour déployer le potentiel site d'un café",
+        "github": "https://github.com/waintane/coffee-shop",
+        "projet": "https://waintane.github.io/coffee-shop/",
+        "outil": [
+            "react", "scss", "ts"
+        ]
+    },
+    {
         "id": 1,
         "titre": "Contact me app express.js",
         "img": "https://cdn.myportfolio.com/ea486bab-8067-4392-ba02-c9b9af9eb055/a0c97b05-e3d0-4f33-9470-ed08f68a4702_rw_1200.png?h=cfccb09563f8f5f12443b12caa295f13",
@@ -17,17 +39,6 @@
         "description": "Date: 2023. Application web utilisant openWheater api pour fetch la météo de la ville recherché pour ensuite afficher le tout",
         "github": "https://github.com/waintane/wheater-app",
         "projet": "https://waintane.github.io/wheater-app/",
-        "outil": [
-            "react", "scss", "ts"
-        ]
-    },
-    {
-        "id": 3,
-        "titre": "Project page d'un café avec React.js",
-        "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/52f58215-8160-4399-b6c5-9d01a4c9c85e/dfqknsa-1113323a-db20-4eaa-bbd7-68eaecf16db9.png/v1/fill/w_1280,h_596,q_80,strp/depot_screenshot_project_by_testdev9840_dfqknsa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk2IiwicGF0aCI6IlwvZlwvNTJmNTgyMTUtODE2MC00Mzk5LWI2YzUtOWQwMWE0YzljODVlXC9kZnFrbnNhLTExMTMzMjNhLWRiMjAtNGVhYS1iYmQ3LTY4ZWFlY2YxNmRiOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BIOtqUIkA8o7HthpNE9bsEDkWAc8I_Mf5DhUaGHypeM",
-        "description": "Date: 2023. Application web utilisant React de manière rudimentaire pour déployer le potentiel site d'un café",
-        "github": "https://github.com/waintane/coffee-shop",
-        "projet": "https://waintane.github.io/coffee-shop/",
         "outil": [
             "react", "scss", "ts"
         ]
