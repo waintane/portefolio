@@ -861,7 +861,7 @@ body .banniere h1, body .banniere h2 {
     flex-direction: row;
     height: clamp(300px, 15vw, 1000px);
     width: 100vw;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
   .page-projet .carte .container1 {
     width: 55vw;
@@ -943,7 +943,7 @@ body .banniere h1, body .banniere h2 {
     width: 87vw;
     padding: 0px 4vw;
     border-radius: 0px 5px 5px 0px;
-    margin-bottom: clamp(50px, 24vw, 600px);
+    margin-bottom: clamp(300px, 24vw, 600px);
   }
   .page-projet .carte .container1 {
     width: 40vw;
@@ -986,7 +986,7 @@ body .banniere h1, body .banniere h2 {
     border: 4px solid #DAB757;
   }
   .page-projet .carte .container2 .outil {
-    width: clamp(130px, 18.5vw, 350px);
+    width: clamp(230px, 18.5vw, 350px);
     height: clamp(40px, 2.3vw, 300px);
     background-color: #487E6F;
     padding: 10px 10px 10px 10px;
