@@ -667,7 +667,7 @@ body .banniere h1, body .banniere h2 {
   font-size: clamp(17px, 1.4vw, 35px);
 }
 
-.competence .tabs div:nth-of-type(2) {
+.competence .tabs section:nth-of-type(2) div {
   background-color: #487E6F;
 }
 
@@ -679,11 +679,11 @@ body .banniere h1, body .banniere h2 {
     gap: 10px;
   }
   .competence .tabs .carte {
-    height: clamp(280px, 33vw, 600px);
+    height: clamp(200px, 25vw, 400px);
   }
   .competence .tabs div:nth-of-type(1) {
     grid-area: a;
-    height: clamp(570px, 67vw, 1200px);
+    height: clamp(450px, 50vw, 600px);
   }
   .competence .tabs div:nth-of-type(2) {
     grid-area: b;
@@ -724,10 +724,10 @@ body .banniere h1, body .banniere h2 {
     width: clamp(30px, 6vw, 200px);
     height: clamp(30px, 6vw, 200px);
   }
-  .competence .tabs div:nth-of-type(2) {
+  .competence .tabs section:nth-of-type(2) {
     margin-top: clamp(20px, 7vw, 300px);
   }
-  .competence .tabs div:nth-of-type(3) {
+  .competence .tabs section:nth-of-type(3) {
     margin-top: clamp(10px, 3vw, 200px);
   }
 }
@@ -898,23 +898,23 @@ body .banniere h1, body .banniere h2 {
   .page-projet .carte .container2 .outil div {
     height: 70%;
   }
-  .page-projet .carte:nth-of-type(even) {
+  .page-projet section:nth-of-type(even) .carte {
     display: flex;
     flex-direction: row-reverse;
   }
-  .page-projet .carte:nth-of-type(even) .container1 {
+  .page-projet section:nth-of-type(even) .carte .container1 {
     margin-right: 4vw;
   }
-  .page-projet .carte:nth-of-type(even) .container2 {
+  .page-projet section:nth-of-type(even) .carte .container2 {
     margin-left: 4vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  .page-projet .carte:nth-of-type(even) .container2 p {
+  .page-projet section:nth-of-type(even) .carte .container2 p {
     color: white;
   }
-  .page-projet .carte:nth-of-type(even) .container2 .bouton {
+  .page-projet section:nth-of-type(even) .carte .container2 .bouton {
     display: flex;
     align-items: center;
   }
@@ -999,12 +999,12 @@ body .banniere h1, body .banniere h2 {
     align-items: center;
     justify-content: center;
   }
-  .page-projet .carte:nth-of-type(even) {
+  .page-projet section:nth-of-type(even) .carte {
     margin-left: auto;
     flex-direction: row-reverse;
     border-radius: 5px 0px 0px 5px;
   }
-  .page-projet .carte:nth-of-type(even) .container2 {
+  .page-projet section:nth-of-type(even) .carte .container2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;

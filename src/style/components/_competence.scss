@@ -45,8 +45,10 @@
             }
         }
 
-        div:nth-of-type(2){
-            background-color: $mainColor;
+        section:nth-of-type(2){
+            div{
+                background-color: $mainColor;
+            }
         }
     }
 }
@@ -54,11 +56,11 @@
     .competence{
         .tabs{
             .carte{
-                height: clamp(280px, 33vw, 600px);
+                height: clamp(200px, 25vw, 400px);
             }
             div:nth-of-type(1){
                 grid-area: a;
-                height: clamp(570px, 67vw, 1200px);
+                height: clamp(450px, 50vw, 600px);
             }
             div:nth-of-type(2){
                 grid-area: b;
@@ -114,10 +116,10 @@
                 }
             }
     
-            div:nth-of-type(2){
+            section:nth-of-type(2){
                 margin-top: clamp(20px, 7vw, 300px);
             }
-            div:nth-of-type(3){
+            section:nth-of-type(3){
     
                 margin-top: clamp(10px, 3vw, 200px);
             }

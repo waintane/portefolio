@@ -182,26 +182,28 @@
                 }
             }
         }
-        .carte:nth-of-type(even){
-            display: flex;
-            flex-direction: row-reverse;
-            .container1{
-                margin-right: 4vw;
-            }
-            .container2{
-                margin-left: 4vw;
+        section:nth-of-type(even){
+            .carte{
                 display: flex;
-                flex-direction: column;
-    
-                align-items: flex-start;
-                p{
-                    color: white;
+                flex-direction: row-reverse;
+                .container1{
+                    margin-right: 4vw;
                 }
-
-                .bouton{
-
+                .container2{
+                    margin-left: 4vw;
                     display: flex;
-                    align-items: center;
+                    flex-direction: column;
+        
+                    align-items: flex-start;
+                    p{
+                        color: white;
+                    }
+    
+                    .bouton{
+    
+                        display: flex;
+                        align-items: center;
+                    }
                 }
             }
         }
@@ -308,17 +310,19 @@
                 }
             }
         }
-        .carte:nth-of-type(even){
-            margin-left: auto;
-            flex-direction: row-reverse;
-
-            border-radius: 5px 0px 0px 5px;
+        section:nth-of-type(even){
+            .carte{
+                margin-left: auto;
+                flex-direction: row-reverse;
     
-            .container2{
-                display: flex;
-                flex-direction: column;
-    
-                align-items: flex-end;
+                border-radius: 5px 0px 0px 5px;
+        
+                .container2{
+                    display: flex;
+                    flex-direction: column;
+        
+                    align-items: flex-end;
+                }
             }
         }   
     }
