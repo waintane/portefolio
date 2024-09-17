@@ -15,7 +15,7 @@ const Banniere = () => {
                     </div>
                     <div className="presentation">  
                         <h1>Olivier Paradis-Tardif</h1>
-                        <h2>Développeur frontend et étudiant en Techniques <br/> d'intégration multimédia</h2>
+                        <h2>Développeur frontend et diplômé en Techniques <br/> d'intégration multimédia</h2>
                         <div className="line">
                             <div></div>
                             <div></div>
@@ -32,8 +32,7 @@ const Banniere = () => {
                         </div>
                         <div className="descriptif">
                                 <p>
-                                Salut, je suis un développeur frontend passionné et présentement un étudiant en 3eme année à 
-                                temps plein en techniques d'intégration multimédia au Collège de Maisonneuve 
+                                Je suis un développeur frontend passionné présentement diplômé en techniques d'intégration multimédia au Collège de Maisonneuve et étudiant au bac en génie logiciel 
                                 </p>
                         </div>
                     </div>

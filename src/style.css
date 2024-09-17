@@ -675,7 +675,8 @@ body .banniere h1, body .banniere h2 {
   .competence .tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'a b'  'a c';
+    grid-template-areas: 'a b' 
+ 'a c';
     gap: 10px;
   }
   .competence .tabs .carte {
@@ -850,7 +851,7 @@ body .banniere h1, body .banniere h2 {
   justify-content: center;
   margin-left: 5px;
   height: 70%;
-  background-color: #5be6bc;
+  background-color: #1bc897;
   padding: 0px 2px;
   border: 2px solid #DAB757;
   border-radius: 5px;
