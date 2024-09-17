@@ -4,12 +4,12 @@
         "icon": "https://s2.svgbox.net/hero-solid.svg?ic=code&color=dab757",
         "titre": "language",
         "liste": [
-            "JS / TS / Node.js",
+            "JS / TS",
             "CSS / SASS",
             "HTML",
             "C#",
             "PHP",
-            "SQL / postgreSQL"
+            "MYSQL"
         ]
     },
     {
@@ -19,7 +19,7 @@
         "liste": [
             "React",
             "Wordpress",
-            "Express"
+            "Next.js"
         ]
     },
     {

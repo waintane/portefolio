@@ -20,7 +20,8 @@ const CarteProjet = ({id, titre, img, description, github, projet, outil}: IPROP
                 transform: isInView ? "none" : "translateY(100px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s 0.5s"
-            }}>
+            }}
+            >
                 <div className="container1">
                     <h3>{titre}</h3>
                     <img src={img} alt="" />
