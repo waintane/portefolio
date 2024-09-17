@@ -1,6 +1,5 @@
 import CarteProjet from "../components/CarteProjet";
 import data from "../data/projetsListe.json";
-import dataDesign from "../data/projetsDesign.json";
 
 const Projets = () => {
     return(
