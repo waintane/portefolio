@@ -1,7 +1,7 @@
 const Footer = () => {
     return(
         <footer>
-            <p>Portefolio de Olivier Paradis-Tardif.</p>
+            <p>Portfolio de Olivier Paradis-Tardif.</p>
         </footer>
     )
 }
