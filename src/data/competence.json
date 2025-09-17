@@ -9,7 +9,7 @@
             "HTML",
             "C#",
             "PHP",
-            "MYSQL"
+            "PostgreSQL"
         ]
     },
     {
@@ -17,9 +17,10 @@
         "icon": "https://s2.svgbox.net/hero-solid.svg?ic=book-open&color=dab757",
         "titre": "Frameworks / Librairie",
         "liste": [
-            "React",
+            "React.js",
             "Wordpress",
-            "Next.js"
+            "Next.js",
+            "Nest.js"
         ]
     },
     {
